@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Essentia CMS</title>
-  <!-- <link rel="shortcut icon" type="image/x-icon" href="..\..\public\essentiaIcon.png /> -->
+  <link rel="shortcut icon" type="image/x-icon" href="public/essentiaIcon.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header>

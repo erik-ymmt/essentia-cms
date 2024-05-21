@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header>ul {
+  display: flex;
+  justify-content: center;
+
+}
+
+.customers-container {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.customer-icon {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+}

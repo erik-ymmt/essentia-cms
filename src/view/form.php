@@ -9,7 +9,7 @@ if (isset($originalCustomer)) {
 ?>
 
 <div style="max-width: 40%" class="container">
-  <form method="post">
+  <form method="post" enctype="multipart/form-data">
     <h3> <?php echo isset($originalCustomer) ? 'Edit Customer' : 'Add Customer' ?></h3>
   
     <div class="form-group">
@@ -30,7 +30,7 @@ if (isset($originalCustomer)) {
 
     <div class="form-group">
       <label for="inputImg">Image</label>
-      <input type="file" class="form-control" id="inputImg" name="inputImg" value="" />
+      <input type="file" class="form-control" id="inputImg" name="inputImg" />
     </div>
 
     <div class="form-group">
