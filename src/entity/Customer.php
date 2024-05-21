@@ -54,7 +54,9 @@ class Customer{
     if ($this->image) $values['image']     = $this->image;
     if ($this->company) $values['company'] = $this->company;
 
-    $newId = $dataBase->update($id, $values);
+    if (count($values) > 0) {
+      $newId = $dataBase->update($id, $values);
+    }
   }
 
   public function delete($id){
