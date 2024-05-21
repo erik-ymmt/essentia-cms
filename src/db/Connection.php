@@ -37,4 +37,11 @@ class Connection{
     return $this->connection->lastInsertId();
   }
 
+  public function read(){
+    $query = 'SELECT * FROM '.$this->table;
+    $sth = $this->connection->prepare($query);
+    $sth ->execute();
+    return $sth;
+  }
+
 }

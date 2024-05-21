@@ -17,6 +17,7 @@ class Customer{
   public $phone;
   public $image;
   public $company;
+  public $date;
 
   public function insert(){
     $dataBase = new Connection('customer');
@@ -34,8 +35,11 @@ class Customer{
 
   public static function read(){
     $dataBase = new Connection('customer');
-    $customersList = $dataBase->select()->fetchAll();
-    return customersList;
+    $customersList = $dataBase->read()->fetchAll(PDO::FETCH_CLASS, self::class);
+    echo "<pre>";
+    var_dump($customersList);
+    echo "</pre>";
+    return $customersList;
   }
 
   public function update(){
