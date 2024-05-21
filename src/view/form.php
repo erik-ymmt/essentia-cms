@@ -20,17 +20,17 @@ $required = $isEdit ? '' : 'required'
   
     <div class="form-group">
       <label for="inputName">Name</label>
-      <input type="text" class="form-control" id="inputName" name="inputName" placeholder="<?php echo $namePH, $required?>">
+      <input type="text" class="form-control" id="inputName" name="inputName" placeholder="<?php echo $namePH ?>" <?php echo $required ?>>
     </div>
 
     <div class="form-group">
       <label for="inputEmail">Email</label>
-      <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="<?php echo $emailPH, $required ?>">
+      <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="<?php echo $emailPH ?>" <?php echo $required ?>>
     </div>
 
     <div class="form-group">
       <label for="inputPhone">Phone</label>
-      <input type="text" class="form-control" id="inputPhone" name="inputPhone" placeholder="<?php echo $phonePH, $required ?>">
+      <input type="text" class="form-control" id="inputPhone" name="inputPhone" placeholder="<?php echo $phonePH ?>" <?php echo $required ?>>
     </div>
 
     <div class="form-group">
