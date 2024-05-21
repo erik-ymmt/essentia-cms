@@ -44,6 +44,20 @@ class Connection{
     return $sth;
   }
 
+  public function readById($id){
+    $query = 'SELECT * FROM '.$this->table.' WHERE id = '.$id;;
+    $sth = $this->connection->prepare($query);
+    $sth ->execute();
+    return $sth;
+  }
+
+  public function update($id, $values){
+    $fields = array_keys($values);
+    $query = 'UPDATE '.$this->table.' SET '.implode('=?,',$fields).'=? WHERE id = '.$id;
+    $sth = $this->connection->prepare($query);
+    $sth ->execute(array_values($values));
+  }
+
   public function delete($id){
     $query = 'DELETE FROM '.$this->table.' WHERE id = '.$id;
     $sth = $this->connection->prepare($query);
