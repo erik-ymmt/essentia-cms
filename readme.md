@@ -3,6 +3,8 @@
 ## Sobre
 &nbsp;&nbsp; Este é um projeto desafio, onde fiz um pequeno sistema de cadastro de clientes, com uma tela de visualização, edição e exclusão dos registros.
 
+![essentia_cms](https://github.com/erik-ymmt/essentia-cms/assets/92269952/9f1ce28d-0f9e-4187-966c-7c5ef784fc71)
+
 ## Tecnologias
 &nbsp;&nbsp; Tecnologias utilizadas neste projeto:
 - WAMP;
