@@ -46,8 +46,10 @@ class Customer{
 
   }
 
-  public function delete(){
-
+  public function delete($id){
+    if (!$id) exit;
+    $dataBase = new Connection('customer');
+    $customersList = $dataBase->delete($id);
   }
 
 }

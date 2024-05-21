@@ -9,17 +9,15 @@ use \src\entity\Customer;
 // echo "</pre>";
 
 if(isset($_POST['inputName'])) {
-  $customer = new Customer;
-  $customer->name     = $_POST['inputName'];
-  $customer->email    = $_POST['inputEmail'];
-  $customer->phone    = $_POST['inputPhone'];
-  $customer->company  = $_POST['inputCompany'];
-  $customer->image    = $_POST['inputImg'];
-  $customer->insert();
+  $newCustomer = new Customer;
+  $newCustomer->name     = $_POST['inputName'];
+  $newCustomer->email    = $_POST['inputEmail'];
+  $newCustomer->phone    = $_POST['inputPhone'];
+  $newCustomer->company  = $_POST['inputCompany'];
+  $newCustomer->image    = $_POST['inputImg'];
+  $newCustomer->insert();
 
-  include __DIR__.'/src/view/header.php';
-  include __DIR__.'/src/view/customersList.php';
-  include __DIR__.'/src/view/footer.php';
+  header("Location: list.php");
   exit;
 }
 
