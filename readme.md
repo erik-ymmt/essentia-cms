@@ -1,4 +1,4 @@
-## Essentia Customer Management System
+## Essentia Customer Management System (ECMS)
 
 ## Sobre
 &nbsp;&nbsp; Este é um projeto desafio, onde fiz um pequeno sistema de cadastro de clientes, com uma tela de visualização, edição e exclusão dos registros.
@@ -37,7 +37,8 @@ CREATE TABLE `customer` (
 ----
 
 ### Pontos de melhoria:
-- Adicionar validações e maior segurança na autenticação;
+- Adicionar validações de campos;
+- Maior segurança no acesso ao banco de dados;
 - Melhorar experiência do usuário: CSS, paginação da lista, confirmação de exclusão, etc.
 
 ### Referências:
